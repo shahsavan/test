@@ -11,7 +11,7 @@ export default class FormikBasic extends Component<any, any> {
     render() {
         return (
             <div dir={'rtl'}>
-                <h1>Sign Up</h1>
+                <h1>ثبت نام</h1>
                 <Formik
                     initialValues={{
                         firstName: '',
@@ -24,17 +24,17 @@ export default class FormikBasic extends Component<any, any> {
                     }}
                 >
                     <Form>
-                        <label htmlFor="firstName">نام</label>
-                        <Field id="firstName" name="firstName" placeholder="Jane"/>
+                        <label htmlFor="firstName">نام:</label>
+                        <Field id="firstName" name="firstName" placeholder="سعید"/>
 
-                        <label htmlFor="lastName">نام خانوادگی</label>
-                        <Field id="lastName" name="lastName" placeholder="Doe"/>
+                        <label htmlFor="lastName">نام خانوادگی:</label>
+                        <Field id="lastName" name="lastName" placeholder="شاهسون"/>
 
-                        <label htmlFor="email">ایمیل</label>
+                        <label htmlFor="email">ایمیل:</label>
                         <Field
                             id="email"
                             name="email"
-                            placeholder="jane@acme.com"
+                            placeholder="s.shahsavan@gmail.com"
                             type="email"
                         />
                         <button type="submit">ثبت</button>
