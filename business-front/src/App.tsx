@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Formik} from "formik";
+import FormikBasic from "./FormikBasic";
 
 export default class App extends Component<any, any> {
     constructor(props: any) {
@@ -19,21 +20,20 @@ export default class App extends Component<any, any> {
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.
                 </p>
-                <Formik initialValues={{name: 'guest'}} onSubmit={(values, actions) => {
+                {/*<Formik initialValues={{name: 'guest'}} onSubmit={(values, actions) => {
                     this.login();
                 }}>
                     {props => (
                         <input type="text" value={props.values.name}/>
                     )
                     }
-                </Formik>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
+                </Formik>*/}
+                <FormikBasic />
                 <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
                     Learn React
                 </a>
             </header>
+        /*<AccountMenu isAuthenticated={isAuthenticated} onLogout={onLogout} />*/
             /*,
         <div className="App">
           <header className="App-header">
